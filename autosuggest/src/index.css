@@ -1,0 +1,21 @@
+.SuggestionBox {
+  position: absolute;
+  width: max-content;
+  border: 1px solid black;
+  height: 150px;
+  overflow: auto;
+  background: lightgrey;
+  box-shadow: 2px 2px 1px grey;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.line {
+  border-bottom: 1px solid black;
+}
