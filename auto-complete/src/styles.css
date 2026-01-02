@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    width: 500px;
+    padding: 3px;
+}
+
+.search-result {
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.search-item:hover {
+    background-color:antiquewhite;
+    cursor: pointer;
+}
+
+.search-item.selected {
+    background-color:antiquewhite;
+    cursor: pointer;
+}
