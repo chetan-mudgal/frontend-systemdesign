@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.list {
+  padding-left: 20px;
+  padding-top:2px;
+}
+
+.list-item {
+  padding-left: 20px;
+  padding-top:2px;
+  cursor: pointer;
+  display: flex;
+  column-gap: 5px;
+}
+
+.input {
+  margin-left: 25px;
+}
