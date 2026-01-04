@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 
-export default function Profile({ nextClickHandler, onChangeHandler, form }) {
+export default function Profile({
+  nextClickHandler,
+  onChangeHandler,
+  form,
+  errors,
+}) {
   const [name, setName] = useState(form.name);
   const [email, setEmail] = useState(form.email);
   const [age, setAge] = useState(form.age);
@@ -18,6 +23,7 @@ export default function Profile({ nextClickHandler, onChangeHandler, form }) {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        {errors.name && <div className="error-msg">{errors.name}</div>}
       </div>
 
       <div className="form-row">
@@ -28,6 +34,7 @@ export default function Profile({ nextClickHandler, onChangeHandler, form }) {
           value={age}
           onChange={(e) => setAge(e.target.value)}
         />
+        {errors.age && <div className="error-msg">{errors.age}</div>}
       </div>
 
       <div className="form-row">
@@ -38,6 +45,7 @@ export default function Profile({ nextClickHandler, onChangeHandler, form }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        {errors.email && <div className="error-msg">{errors.email}</div>}
       </div>
       <div className="navigation-button">
         <button type="button" onClick={() => nextClickHandler(1)}>

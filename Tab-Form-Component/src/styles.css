@@ -31,3 +31,7 @@ body {
   flex-grow: 1;
   align-content: end;
 }
+
+.error-msg {
+  color: red;
+}
