@@ -6,10 +6,11 @@ export default function App() {
 
   function handleOnChange(val, index) {
     if (isNaN(val)) return; // take only number not any character
-
+    val = val.trim();
     const newArr = [...inputArr]; // create a new reference array.
     newArr[index] = val.slice(-1); // take only last digit of the number in one box
-    if (index + 1 < inputArr.length) inputRefs.current[index + 1].focus();
+    if (val && index + 1 < inputArr.length)
+      inputRefs.current[index + 1].focus();
 
     setinputArr(newArr);
   }
@@ -22,7 +23,7 @@ export default function App() {
       setinputArr(newArr);
 
       if (index - 1 >= 0) inputRefs.current[index - 1].focus();
-      e.preventDefault();
+      e.preventDefault(); // default behaviour of backpace is also same, so if you let that happen, it will delete two elements. do either but one.
     }
   }
 
