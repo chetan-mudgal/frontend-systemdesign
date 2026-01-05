@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+
+.container{
+    width: 500px;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden; /*important*/
+}
+
+.progress-bar {
+  height: 30px;
+  background-color: greenyellow;
+  transition: 0.5s ease-in;
+  text-align: end;
+  line-height: 30px;
+}
+
+.button2 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.button1{
+  padding: 10px;
+  margin: 10px;
+}
