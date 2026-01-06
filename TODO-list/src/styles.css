@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.tasks-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;  
+}
+
+.input-box {
+  width: 200px;
+}
+.task-row {
+  display: flex;
+  column-gap: 10px;
+}
