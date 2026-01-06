@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.input-box{
+    width: 250px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.chip {
+  display: flex;
+  column-gap: 10px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: grey;
+  border-radius: 20px;
+  color: white;
+}
+
+.remove-button {
+    background: unset;
+    border: unset;
+    color: red;
+}
+
+.chip-text {
+  line-height: 15px;
+}
+
+.chips-container {
+  display: flex;
+  column-gap: 20px;
+  width: 500px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
