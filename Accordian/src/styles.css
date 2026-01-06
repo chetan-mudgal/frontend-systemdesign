@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border: 1px solid black;
+  width: 500px;
+  height: fit-content;
+  margin: 50px;
+  padding: 20px;
+  background-color: snow;
+}
+
+.box-item {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.box-item-sub {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.text{
+  font-weight: 600;
+}
