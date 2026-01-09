@@ -1,0 +1,2 @@
+body{font-family:sans-serif}.container{align-items:center;display:flex;flex-direction:column}.grid{border:1px solid #000;display:grid;grid-template-columns:repeat(20,1fr);height:400px;width:400px}.snake{background-color:green}.food{background-color:red;border-radius:50%}
+/*# sourceMappingURL=main.dd2d5404.css.map*/
