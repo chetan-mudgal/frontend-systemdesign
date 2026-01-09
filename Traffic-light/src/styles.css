@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100px;
+  height: 400px;
+  row-gap: 50px;
+  margin: 100px;
+  padding: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: gray;
+}
